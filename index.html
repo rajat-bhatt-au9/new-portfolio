@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rajat Bhatt | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -41,20 +43,13 @@
 </div>
 </div>
 
-<!--- Image Slider -->
-
-
-<!-- 
-<div id="slides" class="carousel slide" data-ride="carousel">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-	</ul>
--->
-
-<!--- Jumbotron -->
-
+<section class="hero">
+    <img src="./images/rajat.jpg" alt="banner" class="parallax"> 
+    <div class="text-wrapper">
+        <h1 class="headline">Parallex</h1>
+        <h2 class="sub-headline">The Full Stack Developer</h2>
+    </div>
+</section>
 
 <!--- Two Column Section -->
 <div id="about">
@@ -72,7 +67,7 @@
 </div>
 
 <!--- Three Column Section -->
-<div id="skills">
+<div id="skills" data-aos="fade-up" data-aos-duration="3000">
 
 <div class="container-fluid padding">
 <div class="row text-center padding">
@@ -80,17 +75,37 @@
 		<h1 class="display-4">Web skills</h1>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-3">
-		<div data-toggle="collapse" data-target="#html"><i class="fas fa-code"></i><h3>HTML</h3></div>
+		<div data-toggle="collapse" data-target="#html"><img src="https://img.icons8.com/color/96/4a90e2/html-5--v1.png"/><img src="https://img.icons8.com/ios-glyphs/90/4a90e2/css3.png"/><h3>HTML & CSS</h3></div>
+	</div>
+	
+	<div class="col-xs-12 col-sm-6 col-md-3">
+		<div data-toggle="collapse" data-target="#js"><img src="https://img.icons8.com/color/96/4a90e2/javascript.png"/><h3>Javascript</h3></div>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-3">
-		<div data-toggle="collapse" data-target="#css"><i class="fab fa-css3"></i><h3>CSS</h3></div>
+		<div data-toggle="collapse" data-target="#bootstrap"><img src="https://img.icons8.com/color/96/4a90e2/bootstrap.png"/><h3>Bootstrap</h3></div>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<div data-toggle="collapse" data-target="#js"><i class="fab fa-js"></i><h3>Javascript</h3></div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+		<div data-toggle="collapse" data-target="#react" background-color='red'><img src="https://img.icons8.com/color/96/4a90e2/sass.png"/>
+            <h3>Sass</h3></div>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<div data-toggle="collapse" data-target="#bootstrap"><i class="fas fa-bold"></i><h3>Bootstrap</h3></div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+		<div data-toggle="collapse" data-target="#react" background-color='red'><img src="https://img.icons8.com/ios-glyphs/90/4a90e2/react.png"/>
+            <h3>React</h3></div>
 	</div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+		<div data-toggle="collapse" data-target="#react" background-color='red'><img src="https://img.icons8.com/color/96/4a90e2/nodejs.png"/>
+            <h3>Nodejs</h3></div>
+	</div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+		<div data-toggle="collapse" data-target="#react" background-color='red'><img src="./images/expressjs.png" width='96px'/>
+            <h3>Express</h3></div>
+	</div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <img src="https://img.icons8.com/color/96/4a90e2/mongodb.png"/>
+    <div data-toggle="collapse" data-target="#react" background-color='red'>
+            <h3>MongoDB</h3></div>
+	</div>
+
 </div>
 <hr class="my-4">
 
@@ -166,6 +181,8 @@
 </div>
 </div>
 </footer>
+
+<script src="./main.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
