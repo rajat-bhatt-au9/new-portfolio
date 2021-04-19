@@ -9,40 +9,20 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  padding: 0.8rem;
+.resume-btn {
+  bottom: 30px;
+  right: 5vw;
+  position: fixed;
+  cursor: pointer;
+  background-color: #6095e4;
+  color: white !important;
+  padding: 10px;
 }
 
-.navbar-nav li {
-  padding-right: 20px;
-}
+.resume-btn:hover {
+  background-color: rgb(243, 88, 88);
 
-.navbar-link {
-  font-size: 1.1em !important;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
-}
-
-.carousel-caption h6 {
-  font-size: 100%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -53,12 +33,6 @@ body {
 .btn-primary:hover {
   background-color: #563d7c;
   border: 1px solid #563d7c;
-}
-
-.jumbotron {
-  background-color: #343a40;
-  padding: 1rem;
-  border-radius: 0;
 }
 
 .padding {
@@ -397,4 +371,140 @@ figure {
 
 .CV-timeline-details-item {
   margin-bottom: 0.5em;
+  font-size: 30px;
+}
+
+/* new css */
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title,
+.loading-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5em;
+  letter-spacing: 0.085em;
+  margin: 4.5rem 0 1rem;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin-top: 1.7rem;
+}
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 0.3em;
+  margin: 10px 0 40px;
+  color: #aaa;
+}
+
+.profile-img {
+  float: left;
+  width: 550px;
+  height: 450px;
+  margin-right: 1.5em;
+  display: block;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.main-nav ul {
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #000;
+  font-size: x-large;
+}
+
+.main-nav li a:hover,
+.main-nav li a.active {
+  color: #aaa;
+}
+
+.page {
+  max-width: 75%;
+  padding: 0 20px;
+  margin: 75px auto 0;
+  font-size: 20px;
+}
+
+.page a {
+  color: #000;
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  background: #000;
+  transition: 0.75s;
+}
+
+.loading-title {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-progress {
+  height: 11px;
+  background: #000;
+  top: -11px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  transition: 0.35s;
+}
+
+.about-me {
+  margin: 20px 100px 0 0;
+}
+
+@media (max-width: 900px) {
+  .profile-img {
+    float: none;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .about-me {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 0.85em;
+  }
+  .main-nav li {
+    margin: 0 5px;
+  }
+  .page {
+    margin-top: 20px;
+  }
+  .profile-img {
+    margin-top: 25px;
+  }
 }
